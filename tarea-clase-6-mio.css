@@ -1,0 +1,145 @@
+* {
+    font-size: 17px;
+    transition: all 0.4s ease;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    margin-left: 15px;
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+h3 {
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+hr{
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    position: absolute;
+}
+button{
+    background: #E2E2E2;
+    border-width: thin;
+    border-style: solid;
+	border-radius: 5px;
+	box-shadow: none;
+
+	font-weight: 600;
+	cursor: pointer;
+}
+button:hover{
+    border-width: thin;
+    border-style: solid;
+    background: #A45DFF;
+	border-radius: 5px;
+	box-shadow: none;
+
+	font-weight: 600;
+	cursor: pointer;
+}
+button:focus {outline:0;}
+
+.formFamilia {
+    background: #ECE9E6;
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    border-width: thin;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 10px;
+    box-shadow: #000 1px 1px 1px 1px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.caja-input-chica {
+    width: 65px;
+}
+
+.botonesEdades {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -15px
+}
+
+.botonesSueldos {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -15px
+}
+
+.info-edades {
+    background: #ECE9E6;
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    border-style: solid;
+    border-width: thin;
+    border-color: #000;
+    border-radius: 10px;
+    box-shadow: #000 1px 1px 1px 1px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-sueldos {
+    background: #ECE9E6;
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    border-style: solid;
+    border-width: thin;
+    border-color: #000;
+    border-radius: 10px;
+    box-shadow: #000 1px 1px 1px 1px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sueldos {
+    background: #ECE9E6;
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    border-style: solid;
+    border-width: thin;
+    border-color: #000;
+    border-radius: 10px;
+    box-shadow: #000 1px 1px 1px 1px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ocultar{
+    display: none;
+}
