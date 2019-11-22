@@ -12,38 +12,48 @@
 
 <body>
 
-    <h1>Tarea Clase 6</i></i></h1>
-
-    <div>
-        <form id="familia" class="formFamilia"><strong>Instruccion 1:</strong><br> Coloca cuantos integrantes son en tu
-            familia, y click en Ingresar:
-            <input type="number" id="ingresar-familia" class="caja-input-chica" min="0">
-        </form>
-
-        <h3>Edades:</h3>
-        <ul id="info-edades" class="info-edades"><strong>Instruccion 2:</strong> Ingresar edades, y click en
-            Calcular. (Reiniciar para borrar la lista.)<br><br>
-        </ul>
+    <div class="grid-container">
+        <form id="formulario">
+            <div class="form">
+                <div class="titulo">
+                    <h1>Tarea Clase 6</i></i></h1><hr>
+                </div>
+                <div class="sectorA1">
+                    <form id="familia" class="formFamilia"><strong>Instruccion 1:</strong><br> Coloca cuantos
+                        integrantes son en tu
+                        familia, y click en Ingresar:
+                        <input type="number" id="ingresar-familia" class="caja-input-chica" min="0">
+                </div>
+                <div class="sectorA2"><hr><br>
+                    <h3>Edades:</h3>
+                    <ul id="info-edades" class="info-edades"><strong>Instruccion 2:</strong> Ingresar edades, y click en
+                        Calcular. (Reiniciar para borrar la lista.)
+                    </ul>
+                </div>
+                <div class="botonA1"><button id="calcular-integrantes">Ingresar</button></div>
+                <div class="botonA2"><button id="reiniciar">Reiniciar</button></div>
+                <div class="botonA3"><button id="calcular-edades"><span>Calcular</span></button></div>
+                <div class="sectorB1"><hr><br>
+                    <h3>Sueldos:</h3>
+                    <form id="sueldos" class="sueldos">Agrega los sueldos:</form>
+                </div>
+                <div class="sectorB2">
+                    <ul id="info-sueldos" class="info-sueldos">
+                        <strong>Instruccion 3:</strong> Click en Agregar, colocar sueldos anuales, y click en Calcular.
+                        (Quitar para
+                        borrar sueldos.)
+                    </ul>
+                </div>
+                <div class="botonB1"><button id="agregar-sueldo">Agregar</button></div>
+                <div class="botonB2"><button id="quitar-sueldo">Quitar</button></div>
+                <div class="botonB3"><button id="calcular-sueldos"><span>Calcular</span></button></div>
+            </div>
     </div>
-    <div class="botonesEdades">
-        <button id="calcular-integrantes">Ingresar</button>
-        <button id="calcular-edades">Calcular</button>
-        <button id="reiniciar">Reiniciar</button>
-    </div>
+    <div class="footer">
+            <footer><a href="https://github.com/NachoKai">Nacho Caiafa</a></footer>
+        </div>
+    </form>
 
-    <hr><br>
-
-    <h3>Sueldos:</h3>
-    <form id="sueldos" class="sueldos">Agrega los sueldos:</form>
-    <ul id="info-sueldos" class="info-sueldos">
-        <strong>Instruccion 3:</strong> Click en Agregar, colocar sueldos anuales, y click en Calcular. (Quitar para
-        borrar sueldos.)<br><br>
-    </ul>
-    <div class="botonesSueldos">
-        <button id="agregar-sueldo">Agregar</button>
-        <button id="quitar-sueldo">Quitar</button> <br>
-        <button id="calcular-sueldos">Calcular</button>
-    </div>
     <script type="text/javascript" src="tarea-clase-6-mio.js"></script>
 </body>
 

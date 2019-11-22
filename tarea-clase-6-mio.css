@@ -1,145 +1,268 @@
 * {
-    font-size: 17px;
-    transition: all 0.4s ease;
-    font-family: 'Lato', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+body {
+    height: 100vh;
+}
+
+.grid-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: ;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.8fr 0.2fr;
+    grid-template-areas: "form form form form""form form form form""footer footer footer footer";
+}
+
+form {
+    padding: 2rem 3rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(230, 220, 243);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    flex-flow: column nowrap;
 }
 
 h1 {
-    margin-left: 15px;
-    margin-bottom: -10px;
-    font-size: 25px;
+    margin-bottom: 1rem;
 }
-h3 {
-    margin-left: 15px;
-    margin-bottom: -10px;
+
+label {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 0;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
 }
-hr{
-    width: 350px;
-    min-width: 350px;
-    max-width: 350px;
+
+input {
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(230, 220, 243);
+    margin-bottom: 1rem;
+}
+
+button {
+    height: 35px;
+    font-size: 15px;
+    display: inline-block;
+    background: rgba(240, 119, 7, 0.863);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #f0f0f0;
+    line-height: 150%;
+    background: rgb(224, 112, 6);
+}
+
+button:active {
+    background: rgb(190, 95, 6);
+    height: 32px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
     position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
-button{
-    background: #E2E2E2;
-    border-width: thin;
-    border-style: solid;
-	border-radius: 5px;
-	box-shadow: none;
 
-	font-weight: 600;
-	cursor: pointer;
+button:hover span {
+    padding-right: 10px;
 }
-button:hover{
-    border-width: thin;
-    border-style: solid;
-    background: #A45DFF;
-	border-radius: 5px;
-	box-shadow: none;
 
-	font-weight: 600;
-	cursor: pointer;
+button:hover span:after {
+    opacity: 1;
+    right: 1;
 }
-button:focus {outline:0;}
 
-.formFamilia {
-    background: #ECE9E6;
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
-    border-width: thin;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 10px;
-    box-shadow: #000 1px 1px 1px 1px;
-    padding: 10px;
-    margin: 10px;
+.footer {
+    grid-area: footer;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo""sectorA1 sectorA1 sectorA1""sectorA2 sectorA2 sectorA2""botonA1 botonA2 botonA3""sectorB1 sectorB1 sectorB1""sectorB2 sectorB2 sectorB2""botonB1 botonB2 botonB3";
+    grid-area: form;
+}
+
+.error {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
     width: 300px;
-    min-width: 300px;
-    max-width: 300px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(202, 60, 60);
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 180%;
 }
 
-.caja-input-chica {
-    width: 65px;
-}
-
-.botonesEdades {
-    padding: 10px;
-    margin: 10px;
+.valido {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
     width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: -15px
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 180%;
 }
 
-.botonesSueldos {
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    height: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: -15px
+
+.titulo {
+    grid-area: titulo;
 }
 
-.info-edades {
-    background: #ECE9E6;
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
-    border-style: solid;
-    border-width: thin;
-    border-color: #000;
-    border-radius: 10px;
-    box-shadow: #000 1px 1px 1px 1px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.sectorA1 {
+    grid-area: sectorA1;
 }
 
-.info-sueldos {
-    background: #ECE9E6;
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
-    border-style: solid;
-    border-width: thin;
-    border-color: #000;
-    border-radius: 10px;
-    box-shadow: #000 1px 1px 1px 1px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.sectorA2 {
+    grid-area: sectorA2;
 }
 
-.sueldos {
-    background: #ECE9E6;
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
-    border-style: solid;
-    border-width: thin;
-    border-color: #000;
-    border-radius: 10px;
-    box-shadow: #000 1px 1px 1px 1px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.botonA1 {
+    grid-area: botonA1;
 }
 
-.ocultar{
-    display: none;
+.botonA2 {
+    grid-area: botonA2;
+}
+
+.botonA3 {
+    grid-area: botonA3;
+}
+
+.sectorB1 {
+    grid-area: sectorB1;
+}
+
+.sectorB2 {
+    grid-area: sectorB2;
+}
+
+.botonB1 {
+    grid-area: botonB1;
+}
+
+.botonB2 {
+    grid-area: botonB2;
+}
+
+.botonB3 {
+    grid-area: botonB3;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+footer a:active{
+    font-size: 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    #formulario {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #formulario {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #formulario {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    #formulario {
+        width: 60vw;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #formulario,
+    footer,
+    footer a {
+        background: #2a333d;
+        color: #ebebeb;
+    }
+
+    body,
+    footer,
+    footer a {
+        background-color: #000000;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    #formulario,
+    footer,
+    footer a {
+        background: #ffffff;
+        color: #252525;
+    }
+
+    body,
+    footer,
+    footer a {
+        background-color: #96b7dd;
+    }
 }
