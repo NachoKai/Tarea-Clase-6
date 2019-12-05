@@ -11,21 +11,26 @@ input {
 }
 
 .footer {
-    border-top: solid 1px #000;
+    color: #ffffff;
+    border-top: solid 1px #fff;
     text-align: center;
 }
 
 footer a {
-    color: #000000;
+    color: #ffffff;
 }
 
 body {
+    background: #000 !important;
     max-width: 100vw;
     text-align: center;
 }
 
 .container {
-    padding: 20px;
+    margin-top: 10px;
+    max-width: 30rem !important;
+    border-radius: 5px;
+    padding: 35px !important;
     min-height: calc(100vh - 25px);
 }
 
