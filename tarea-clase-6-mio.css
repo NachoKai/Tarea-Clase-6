@@ -38,6 +38,10 @@ body {
     margin: 5px;
 }
 
+.btn:focus {
+    outline: 0 !important;
+}
+
 hr {
     background-color: #fff;
 }
@@ -50,4 +54,8 @@ hr {
 .botonesSueldos {
     margin-right: auto;
     margin-left: auto;
+}
+
+.hide{
+    display: none;
 }

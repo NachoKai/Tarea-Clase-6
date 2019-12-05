@@ -16,17 +16,16 @@ function calcularIntegrantes($ingresarFamilia) {
         const label = document.createElement("label");
         const edadFamiliar = document.createTextNode(`Edad del familiar ${i}:  `);
         const input = document.createElement("input");
+        const div = document.createElement("div");
         input.type = "number";
         input.classList.add("edad");
         input.id = `edad-${i}`;
-        const div = document.createElement("div");
         label.appendChild(edadFamiliar);
         familia.appendChild(label);
         familia.appendChild(input);
         familia.appendChild(div);
     }
-    $botonCalcularIntegrantes.disabled = true;
-    return false;
+    event.preventDefault();
 }
 
 function menorNodo(edades) {
