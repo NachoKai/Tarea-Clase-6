@@ -37,3 +37,17 @@ body {
 .btn {
     margin: 5px;
 }
+
+hr {
+    background-color: #fff;
+}
+
+.botonesEdades {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.botonesSueldos {
+    margin-right: auto;
+    margin-left: auto;
+}
