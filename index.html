@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="tarea-clase-6-mio.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Tarea Clase 6</title>
 </head>
 
@@ -16,7 +18,8 @@
         <form id="formulario">
             <div class="form">
                 <div class="titulo">
-                    <h1>Tarea Clase 6</i></i></h1><hr>
+                    <h1>Tarea Clase 6</i></i></h1>
+                    <hr>
                 </div>
                 <div class="sectorA1">
                     <form id="familia" class="formFamilia"><strong>Instruccion 1:</strong><br> Coloca cuantos
@@ -24,7 +27,8 @@
                         familia, y click en Ingresar:
                         <input type="number" id="ingresar-familia" class="caja-input-chica" min="0">
                 </div>
-                <div class="sectorA2"><hr><br>
+                <div class="sectorA2">
+                    <hr><br>
                     <h3>Edades:</h3>
                     <ul id="info-edades" class="info-edades"><strong>Instruccion 2:</strong> Ingresar edades, y click en
                         Calcular. (Reiniciar para borrar la lista.)
@@ -33,7 +37,8 @@
                 <div class="botonA1"><button id="calcular-integrantes">Ingresar</button></div>
                 <div class="botonA2"><button id="reiniciar">Reiniciar</button></div>
                 <div class="botonA3"><button id="calcular-edades"><span>Calcular</span></button></div>
-                <div class="sectorB1"><hr><br>
+                <div class="sectorB1">
+                    <hr><br>
                     <h3>Sueldos:</h3>
                     <form id="sueldos" class="sueldos">Agrega los sueldos:</form>
                 </div>
@@ -49,12 +54,25 @@
                 <div class="botonB3"><button id="calcular-sueldos"><span>Calcular</span></button></div>
             </div>
     </div>
-    <div class="footer">
-            <footer><a href="https://github.com/NachoKai">Nacho Caiafa</a></footer>
-        </div>
     </form>
+    <div class="footer">
+        <footer><a href="https://github.com/nachokai">Nacho Caiafa</a> &copy; <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </footer>
+      </div>
 
     <script type="text/javascript" src="tarea-clase-6-mio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
 </body>
 
 </html>

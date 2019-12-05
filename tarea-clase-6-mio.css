@@ -7,13 +7,11 @@
 }
 
 body {
-    height: 100vh;
+    max-height: calc(100vh - 20px);
 }
 
 .grid-container {
-    height: 100vh;
     display: flex;
-    flex-wrap: ;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -22,7 +20,8 @@ body {
     grid-template-areas: "form form form form""form form form form""footer footer footer footer";
 }
 
-form {
+#formulario {
+    max-width: 50%;
     padding: 2rem 3rem;
     border-radius: 0.75rem;
     border: 1px solid rgb(230, 220, 243);
@@ -204,39 +203,17 @@ footer {
     text-align: center;
 }
 
-footer a{
+footer a {
     text-decoration: none;
 }
-footer a:active{
+
+footer a:active {
     font-size: 15px;
-}
-
-@media screen and (min-width: 0px) and (max-width: 320px) {
-    #formulario {
-        width: 90vw;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    #formulario {
-        width: 80vw;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    #formulario {
-        width: 70vw;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-    #formulario {
-        width: 60vw;
-    }
 }
 
 @media (prefers-color-scheme: dark) {
 
+    html,
     #formulario,
     footer,
     footer a {
@@ -244,6 +221,7 @@ footer a:active{
         color: #ebebeb;
     }
 
+    html,
     body,
     footer,
     footer a {
@@ -253,6 +231,7 @@ footer a:active{
 
 @media (prefers-color-scheme: light) {
 
+    html,
     #formulario,
     footer,
     footer a {
@@ -260,6 +239,7 @@ footer a:active{
         color: #252525;
     }
 
+    html,
     body,
     footer,
     footer a {
@@ -267,6 +247,6 @@ footer a:active{
     }
 }
 
-.ocultar{
+.ocultar {
     display: none;
 }
