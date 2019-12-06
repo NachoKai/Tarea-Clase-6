@@ -1,4 +1,3 @@
-//En construccion
 # Familiares, edades y sueldos.
 r/argentina programa por Fabricio Sodano
   
