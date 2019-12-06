@@ -1,5 +1,5 @@
 //En construccion
-# Titulo
+# Familiares, edades y sueldos.
 r/argentina programa por Fabricio Sodano
   
 ## [Entrar](https://nachokai.github.io/Tarea-Clase-6/)  
@@ -8,7 +8,7 @@ r/argentina programa por Fabricio Sodano
 
 ____________________________________
 
-# Title
+# Family, ages and salaries.
 r/argentina program by Fabricio Sodano
   
 ## [Enter](https://nachokai.github.io/Tarea-Clase-6/)
