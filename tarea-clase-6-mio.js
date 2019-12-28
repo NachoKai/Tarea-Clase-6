@@ -3,27 +3,37 @@ const $calcularEdades = document.querySelector("#calcular-edades");
 const infoEdades = document.querySelector("#info-edades");
 const $resetear = document.querySelector("#reiniciar");
 const familia = document.querySelector("#familia");
-
+const integrantes = document.querySelector("#integrantes");
 let $botonCalcularIntegrantes = document.querySelector("#calcular-integrantes")
+
 $botonCalcularIntegrantes.onclick = function () {
     let $ingresarFamilia = document.querySelector("#ingresar-familia").value
+    borrarIntegrantes()
     calcularIntegrantes($ingresarFamilia)
 }
 
 function calcularIntegrantes($ingresarFamilia) {
 
     for (let i = 1; i <= $ingresarFamilia; i++) {
-        const label = document.createElement("label");
-        const edadFamiliar = document.createTextNode(`Edad del familiar ${i}:  `);
-        const input = document.createElement("input");
         const div = document.createElement("div");
+        div.className = "integrante"
+        const label = document.createElement("label");
+        label.textContent = `Edad del familiar ${i}:  `
+        const input = document.createElement("input");
         input.type = "number";
         input.classList.add("edad");
         input.id = `edad-${i}`;
-        label.appendChild(edadFamiliar);
-        familia.appendChild(label);
-        familia.appendChild(input);
-        familia.appendChild(div);
+        div.appendChild(label);
+        div.appendChild(input);
+        integrantes.appendChild(div);
+    }
+    event.preventDefault();
+}
+
+function borrarIntegrantes() {
+    const $integrantes = document.querySelectorAll(".integrante")
+    for (let i = 0; i < $integrantes.length; i++) {
+        $integrantes[i].remove()
     }
     event.preventDefault();
 }
