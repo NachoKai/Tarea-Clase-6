@@ -71,13 +71,20 @@ function agregarALista(lista, texto) {
     lista.appendChild(div);
 }
 
+function borrarLista() {
+    infoEdades.innerHTML = ''
+}
+
 $calcularEdades.onclick = function () {
     let edades = document.querySelectorAll(".integrantes input")
+    borrarLista()
     agregarALista(infoEdades, `La persona mas chica tiene ${menorNodo(edades)} años.`);
     agregarALista(infoEdades, `La persona mas grande tiene ${mayorNodo(edades)} años.`);
     agregarALista(infoEdades, `La edad promedio es de ${promedioNodo(edades).toFixed(2)} años.`);
     return false;
 }
+
+
 
 $resetear.onclick = function () {
     document.getElementById("familia").reset();
