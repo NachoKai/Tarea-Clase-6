@@ -21,7 +21,6 @@ function calcularIntegrantes($ingresarFamilia) {
         label.textContent = `Edad del familiar ${i}:  `
         const input = document.createElement("input");
         input.type = "number";
-        input.classList.add("edad");
         input.id = `edad-${i}`;
         div.appendChild(label);
         div.appendChild(input);
