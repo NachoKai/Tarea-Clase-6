@@ -13,7 +13,6 @@ $botonCalcularIntegrantes.onclick = function () {
 }
 
 function calcularIntegrantes($ingresarFamilia) {
-
     for (let i = 1; i <= $ingresarFamilia; i++) {
         const div = document.createElement("div");
         div.className = "integrante"
@@ -73,11 +72,10 @@ function agregarALista(lista, texto) {
 }
 
 $calcularEdades.onclick = function () {
-    const edades = document.querySelectorAll(".edad");
+    let edades = document.querySelectorAll(".integrantes input")
     agregarALista(infoEdades, `La persona mas chica tiene ${menorNodo(edades)} años.`);
     agregarALista(infoEdades, `La persona mas grande tiene ${mayorNodo(edades)} años.`);
     agregarALista(infoEdades, `La edad promedio es de ${promedioNodo(edades).toFixed(2)} años.`);
-    $calcularEdades.disabled = true;
     return false;
 }
 
@@ -89,8 +87,6 @@ $resetear.onclick = function () {
     while (familia.hasChildNodes()) {
         familia.removeChild(familia.childNodes[0]);
     }
-    $calcularEdades.disabled = false;
-    $botonCalcularIntegrantes.disabled = false;
     location.reload();
     return false;
 }
