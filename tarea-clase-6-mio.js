@@ -1,9 +1,9 @@
 //TAREA 1
-const $calcularEdades = document.querySelector("#calcular-edades");
-const infoEdades = document.querySelector("#info-edades");
-const $resetear = document.querySelector("#reiniciar");
-const familia = document.querySelector("#familia");
-const integrantes = document.querySelector("#integrantes");
+const $calcularEdades = document.querySelector("#calcular-edades"),
+    infoEdades = document.querySelector("#info-edades"),
+    $resetear = document.querySelector("#reiniciar"),
+    familia = document.querySelector("#familia"),
+    integrantes = document.querySelector("#integrantes")
 let $botonCalcularIntegrantes = document.querySelector("#calcular-integrantes")
 
 $botonCalcularIntegrantes.onclick = function () {
@@ -71,9 +71,7 @@ function agregarALista(lista, texto) {
     lista.appendChild(div);
 }
 
-function borrarLista() {
-    infoEdades.innerHTML = ''
-}
+borrarLista = () => infoEdades.innerHTML = ''
 
 $calcularEdades.onclick = function () {
     let edades = document.querySelectorAll(".integrantes input")
@@ -83,8 +81,6 @@ $calcularEdades.onclick = function () {
     agregarALista(infoEdades, `La edad promedio es de ${promedioNodo(edades).toFixed(2)} años.`);
     return false;
 }
-
-
 
 $resetear.onclick = function () {
     document.getElementById("familia").reset();
@@ -100,11 +96,11 @@ $resetear.onclick = function () {
 
 //TAREA 2
 
-const infoSueldos = document.querySelector("#info-sueldos");
-const sueldos = document.querySelector("#sueldos");
-const $agregarSueldo = document.querySelector("#agregar-sueldo");
-const $quitarSueldo = document.querySelector("#quitar-sueldo");
-const $calcularSueldos = document.querySelector("#calcular-sueldos");
+const infoSueldos = document.querySelector("#info-sueldos"),
+    sueldos = document.querySelector("#sueldos"),
+    $agregarSueldo = document.querySelector("#agregar-sueldo"),
+    $quitarSueldo = document.querySelector("#quitar-sueldo"),
+    $calcularSueldos = document.querySelector("#calcular-sueldos")
 let sum = 0
 
 function agregarSueldos() {
